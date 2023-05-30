@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
     "${(await getApplicationDocumentsDirectory()).path}/$fileName";
 
     await dio.download(
-      "https://github.com/AgnelSelvan/Blogs/raw/main/in_app_update_flutter_desktop/app_versions_check/$appPath",
+      "https://raw.githubusercontent.com/yemarn510/flutter-version-update-test/main/app_versions_check/$appPath",
       downloadedFilePath,
       onReceiveProgress: (received, total) {
         final progress = (received / total) * 100;
